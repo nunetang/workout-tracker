@@ -8,7 +8,7 @@ module.exports = function (app) {
             })
             .catch(err => {
                 console.log("err", err)
-                res.json(err)
+                res.json({error: err})
             })
     });
 
@@ -19,7 +19,7 @@ module.exports = function (app) {
             })
             .catch(err => {
                 console.log("err", err)
-                res.json(err)
+                res.json({error: err})
             })
     });
 
@@ -28,7 +28,7 @@ module.exports = function (app) {
             .then(data => res.json(data))
             .catch(err => {
                 console.log("err", err)
-                res.json(err)
+                res.json({error: err})
             })
     });
 
@@ -41,7 +41,7 @@ module.exports = function (app) {
             .then(data => res.json(data))
             .catch(err => {
                 console.log("err", err)
-                res.json(err)
+                res.json({error: err})
             })
     });
 
