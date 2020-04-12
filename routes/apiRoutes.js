@@ -7,6 +7,18 @@ module.exports = function (app) {
                 res.json(data)
             })
             .catch(err => {
+                console.log("err", err)
+                res.json(err)
+            })
+    });
+
+    app.get("/api/workouts/range", function (req, res) {
+        Workout.find()
+            .then(data => {
+                res.json(data)
+            })
+            .catch(err => {
+                console.log("err", err)
                 res.json(err)
             })
     });
@@ -32,6 +44,7 @@ module.exports = function (app) {
                 res.json(err)
             })
     });
+
 }
 
 
