@@ -8,6 +8,10 @@ Created a fitness tracking app utilizing Node.js, Express.js, MongoDB, Heroku an
 ## Live site:
 
 https://fast-ocean-78790.herokuapp.com/
+
+## Demo:
+
+<img src = "public/images/demo.PNG">
  
 ## Installation
 You will need to npm init to get all the required node modules. If you are running the code locally the local host is set to port 3000. You will also need to go in to the config folder and possibly change the config.json values. The file I used to start the project is server.js.
